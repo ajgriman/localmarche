@@ -12,10 +12,10 @@
   /* button styling */
   .buttondisponible {
     --border-right: 6px;
-    --text-stroke-color: rgba(255,255,255,0.6);
-    --animation-color: #37FF8B;
-    --fs-size: 2em;
-    letter-spacing: 3px;
+    --text-stroke-color: #37FF8B;
+    --animation-color: rgb(107,142,35);
+    --fs-size: 1em;
+    letter-spacing: 1.5px;
     text-decoration: none;
     font-size: var(--fs-size);
     font-family: "Arial";
@@ -44,6 +44,7 @@
   }
   /* From Uiverse.io by ahmed150up */ 
   .cardwsp {
+    z-index: 10;
     display: flex;
     height: 70px;
     width: 70px;
@@ -136,3 +137,37 @@
     position: relative;
     z-index: 1;
 }
+.averia-serif-libre-font {
+    font-family: 'Averia Serif Libre', serif; /* Apply the font */
+    font-size: 20px; /* Optional: adjust font size */
+    color: whitesmoke; /* Optional: set text color */
+  }
+ /* From Uiverse.io by JaydipPrajapati1910 */ 
+.loader {
+    width: 20.8px;
+    height: 20.8px;
+    position: relative;
+    transform: rotate(45deg);
+  }
+  
+  .loader:before,
+  .loader:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50% 50% 0 50%;
+    background: #0000;
+    background-image: radial-gradient(circle 4.2px at 50% 50%,#0000 94%, #56aea7);
+  }
+  
+  .loader:after {
+    animation: pulse-ytk0dhmd 1s infinite;
+    transform: perspective(336px) translateZ(0px);
+  }
+  
+  @keyframes pulse-ytk0dhmd {
+    to {
+      transform: perspective(336px) translateZ(168px);
+      opacity: 0;
+    }
+  }  
